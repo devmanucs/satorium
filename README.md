@@ -1,7 +1,5 @@
 # Satorium Agri-Vision
 
-![Satorium Logo](/logo.svg)
-
 ## 📱 Dashboard de Monitoramento Agrícola para Análise de Solo
 
 O Satorium Agri-Vision é uma aplicação web desenvolvida para monitoramento e análise de solo em tempo real, utilizando dados coletados por rovers agrícolas inteligentes. Esta solução integrada permite aos agricultores e agrônomos acessar informações cruciais sobre o solo de suas propriedades, facilitando a tomada de decisões mais precisas e eficientes.
