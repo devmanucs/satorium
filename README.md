@@ -1,73 +1,70 @@
-# Welcome to your Lovable project
+# Satorium Agri-Vision
 
-## Project info
+![Satorium Logo](/logo.svg)
 
-**URL**: https://lovable.dev/projects/e8bf7be7-ff6c-4ea0-8289-e598b909e9d7
+## 📱 Dashboard de Monitoramento Agrícola para Análise de Solo
 
-## How can I edit this code?
+O Satorium Agri-Vision é uma aplicação web desenvolvida para monitoramento e análise de solo em tempo real, utilizando dados coletados por rovers agrícolas inteligentes. Esta solução integrada permite aos agricultores e agrônomos acessar informações cruciais sobre o solo de suas propriedades, facilitando a tomada de decisões mais precisas e eficientes.
 
-There are several ways of editing your application.
+## 🌱 Funcionalidades
 
-**Use Lovable**
+- **Análise de Solo em Tempo Real**: Monitoramento de umidade, pH, temperatura e nutrientes
+- **Visualização Geoespacial**: Mapeamento das propriedades com marcação de pontos de análise
+- **Alertas Inteligentes**: Notificações personalizáveis para condições críticas do solo
+- **Relatórios Detalhados**: Geração de gráficos e análises comparativas
+- **Interface Responsiva**: Acesso via desktop, tablet ou smartphone
+- **Controle do Rover**: Monitoramento de status e configuração remota
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e8bf7be7-ff6c-4ea0-8289-e598b909e9d7) and start prompting.
+## 🛠️ Tecnologias Utilizadas
 
-Changes made via Lovable will be committed automatically to this repo.
+- **React**: Biblioteca JavaScript para construção de interfaces
+- **TypeScript**: Superset de JavaScript com tipagem estática
+- **Tailwind CSS**: Framework CSS utilitário para estilização
+- **Lucide Icons**: Biblioteca de ícones
+- **Recharts**: Biblioteca para visualização de dados
+- **React Router**: Gerenciamento de rotas da aplicação
 
-**Use your preferred IDE**
+## 📊 Interface e Componentes
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+A aplicação está estruturada nas seguintes páginas principais:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. **Dashboard**: Visão geral com indicadores, alertas e acesso rápido às principais funcionalidades
+2. **Mapa de Atividades**: Visualização geoespacial da propriedade com pontos de análise
+3. **Análises de Solo**: Dados detalhados e histórico de leituras do solo
+4. **Relatórios**: Geração e acesso a relatórios personalizados
+5. **Configurações**: Personalização da aplicação e do rover
+6. **Ajuda**: Guia de uso das funcionalidades
 
-Follow these steps:
+## 🚀 Como Executar o Projeto
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/satorium.git
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. Instale as dependências:
+   ```bash
+   cd satorium
+   npm install
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+3. Execute o projeto:
+   ```bash
+   npm run dev
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+4. Acesse a aplicação em [http://localhost:3000](http://localhost:3000)
 
-**Edit a file directly in GitHub**
+## 🧪 Recursos do Rover
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+O rover Satorium coleta dados cruciais para o monitoramento agrícola:
 
-**Use GitHub Codespaces**
+- **Análise de Solo**: Medição de níveis de nutrientes, pH e outros parâmetros essenciais
+- **Monitoramento de Umidade**: Sensores avançados medem a umidade em diferentes profundidades
+- **Análise de Nutrientes**: Identificação e quantificação de nutrientes presentes no solo
+- **Conectividade**: Transmissão em tempo real dos dados coletados
+- **Autonomia**: Bateria de longa duração com sistema de recarga solar
+- **Integração**: Compatibilidade com sistemas de irrigação e outros equipamentos agrícolas
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/e8bf7be7-ff6c-4ea0-8289-e598b909e9d7) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+© 2025 Satorium — soluções de agricultura e monitoramento
