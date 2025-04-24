@@ -1,0 +1,127 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 66 33% 99%;
+    --foreground: 112 50% 12%;
+
+    --card: 66 33% 99%;
+    --card-foreground: 112 50% 12%;
+
+    --popover: 66 33% 99%;
+    --popover-foreground: 112 50% 12%;
+
+    --primary: 101 28% 49%;
+    --primary-foreground: 66 33% 99%;
+
+    --secondary: 69 31% 84%;
+    --secondary-foreground: 112 50% 12%;
+
+    --muted: 69 31% 94%;
+    --muted-foreground: 110 15% 30%;
+
+    --accent: 69 31% 84%;
+    --accent-foreground: 112 50% 12%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 66 33% 99%;
+
+    --border: 69 31% 84%;
+    --input: 69 31% 84%;
+    --ring: 101 28% 49%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 105 37% 28%;
+    --sidebar-foreground: 66 33% 94%;
+    --sidebar-primary: 101 28% 49%;
+    --sidebar-primary-foreground: 66 33% 99%;
+    --sidebar-accent: 112 50% 12%;
+    --sidebar-accent-foreground: 66 33% 99%;
+    --sidebar-border: 112 50% 22%;
+    --sidebar-ring: 101 28% 49%;
+  }
+
+  .dark {
+    --background: 112 50% 12%;
+    --foreground: 66 33% 94%;
+
+    --card: 112 50% 12%;
+    --card-foreground: 66 33% 94%;
+
+    --popover: 112 50% 12%;
+    --popover-foreground: 66 33% 94%;
+
+    --primary: 101 28% 49%;
+    --primary-foreground: 66 33% 99%;
+
+    --secondary: 112 40% 22%;
+    --secondary-foreground: 66 33% 94%;
+
+    --muted: 112 40% 22%;
+    --muted-foreground: 69 31% 84%;
+
+    --accent: 112 40% 22%;
+    --accent-foreground: 66 33% 94%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 66 33% 94%;
+
+    --border: 112 40% 22%;
+    --input: 112 40% 22%;
+    --ring: 101 28% 49%;
+
+    --sidebar-background: 112 50% 12%;
+    --sidebar-foreground: 66 33% 94%;
+    --sidebar-primary: 101 28% 49%; 
+    --sidebar-primary-foreground: 66 33% 99%;
+    --sidebar-accent: 112 40% 22%;
+    --sidebar-accent-foreground: 66 33% 94%;
+    --sidebar-border: 112 40% 22%;
+    --sidebar-ring: 101 28% 49%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .agri-card {
+    @apply bg-card rounded-lg border border-border p-4 shadow-sm transition-all hover:shadow-md;
+  }
+
+  .stat-card {
+    @apply agri-card flex flex-col gap-2;
+  }
+
+  .stat-value {
+    @apply text-2xl font-bold;
+  }
+
+  .stat-title {
+    @apply text-sm text-muted-foreground;
+  }
+
+  .soil-status-good {
+    @apply text-alert-success;
+  }
+
+  .soil-status-warning {
+    @apply text-alert-warning;
+  }
+
+  .soil-status-danger {
+    @apply text-alert-danger;
+  }
+}
